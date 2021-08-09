@@ -7,7 +7,7 @@ public class Account {
         return this.balance;
     }
 
-    public void withdraw(int money){
+    public synchronized void withdraw(int money){// 임계영역
         if(balance >= money){
             try {
                 Thread.sleep(1000);
