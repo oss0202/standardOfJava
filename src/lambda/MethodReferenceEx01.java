@@ -17,6 +17,10 @@ public class MethodReferenceEx01 {
         MethodReferenceEx01 obj = new MethodReferenceEx01();
         Function<String, Boolean> f5 = (x) -> obj.equals(obj);//람다식
         Function<String, Boolean> f6 = obj::equals;//메서드 참조
+        Function<String, Boolean> f7 = MethodReferenceEx01::sample;//메서드 참조
 
+    }
+    public static boolean sample(String sample){
+        return true;
     }
 }
