@@ -1,5 +1,8 @@
 package lambda;
 
+
+import java.time.LocalDate;
+
 public class LambdaEx5 {
     int val = 10; //LambdaEx5.this.val
     
@@ -26,7 +29,9 @@ public class LambdaEx5 {
 
     public static void main(String[] args) {
         LambdaEx5 lambdaEx5 = new LambdaEx5();
-        LambdaEx5.Inner inner = lambdaEx5.new Inner();
+        Inner inner = lambdaEx5.new Inner();
         inner.method(100);
+
+        LocalDate.now();
     }
 }
