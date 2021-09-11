@@ -6,5 +6,8 @@ public class UseBicycle {
         System.out.println("numberOfBicycles : " + Bicycle.getNumberOfBicycles());
         Bicycle bicycle3 = new Bicycle(3,3,3);
         System.out.println("numberOfBicycles : " + Bicycle.getNumberOfBicycles());
+
+        System.out.println("---------------");
+        System.out.println(bicycle1.getNumberOfBicycles());
     }
 }
