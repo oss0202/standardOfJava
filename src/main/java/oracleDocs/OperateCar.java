@@ -21,4 +21,8 @@ public interface OperateCar {
                      double speedOfCar);
          //......
     // more method signatures
+
+    default void defaultMethod(){
+        System.out.println("defaultMethodcall");
+    }
 }
