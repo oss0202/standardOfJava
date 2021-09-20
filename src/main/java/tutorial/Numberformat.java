@@ -1,3 +1,5 @@
+package tutorial;
+
 public class Numberformat {
     public static void main(String[] args) {
         int i = 461012;

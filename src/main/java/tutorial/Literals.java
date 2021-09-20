@@ -1,3 +1,5 @@
+package tutorial;
+
 public class Literals {
     public static void main(String[] args) {
         long creditCardNumber = 1234_5678;

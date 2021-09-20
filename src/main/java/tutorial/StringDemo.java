@@ -1,3 +1,5 @@
+package tutorial;
+
 public class StringDemo {
     public static void main(String[] args) {
         String palindrome = "Dot saw I was Tod";

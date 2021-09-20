@@ -1,3 +1,5 @@
+package tutorial;
+
 import java.text.*;
 
 public class DecimalFormatDemo {

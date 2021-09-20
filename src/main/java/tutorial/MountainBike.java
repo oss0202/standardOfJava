@@ -1,9 +1,11 @@
+package tutorial;
+
 public class MountainBike extends Bicycle{
 
-    // the MountainBike subclass adds one field
+    // the tutorial.MountainBike subclass adds one field
     public int seatHeight;
 
-    // the MountainBike subclass has one constructor
+    // the tutorial.MountainBike subclass has one constructor
     public MountainBike(int startHeight,
                         int startCadence,
                         int startSpeed,
@@ -12,7 +14,7 @@ public class MountainBike extends Bicycle{
         seatHeight = startHeight;
     }
 
-    // the MountainBike subclass adds one method
+    // the tutorial.MountainBike subclass adds one method
     public void setHeight(int newValue) {
         seatHeight = newValue;
     }

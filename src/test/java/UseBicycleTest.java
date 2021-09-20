@@ -1,11 +1,10 @@
 import org.junit.jupiter.api.*;
 import org.junit.jupiter.params.ParameterizedTest;
 import org.junit.jupiter.params.provider.CsvSource;
-import org.junit.jupiter.params.provider.ValueSource;
+import tutorial.Bicycle;
 
 import java.util.Arrays;
 import java.util.Collection;
-import java.util.List;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.assertTrue;
@@ -16,15 +15,15 @@ public class UseBicycleTest {
     @Test
     void 바이클_사용(){
         Bicycle bicycle = new Bicycle(1,1,1);
-        assertEquals(1, bicycle.getID(), "Bicycle getId");
+        assertEquals(1, bicycle.getID(), "tutorial.Bicycle getId");
     }
 
     @ParameterizedTest
     @CsvSource({"1, 2, 3", "3, 4, 5"})
     void 파라미터_바이클_사용(int startCadence, int startSpeed, int startGear){
         System.out.println("startCadence : " + startCadence + ", startSpeed : " + startSpeed + ", startGear : " + startGear);
-//        Bicycle bicycle = new Bicycle(1,1,1);
-//        assertEquals(1, bicycle.getID(), "Bicycle getId");
+//        tutorial.Bicycle bicycle = new tutorial.Bicycle(1,1,1);
+//        assertEquals(1, bicycle.getID(), "tutorial.Bicycle getId");
     }
 
     @RepeatedTest(10)

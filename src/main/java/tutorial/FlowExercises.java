@@ -1,3 +1,5 @@
+package tutorial;
+
 public class FlowExercises {
     public static void main(String[] args) {
         int aNumber = 3;
