@@ -29,4 +29,16 @@ public class Bicycle {
     public void speedUp(int increment) {
         speed += increment;
     }
+
+    public int getCadence() {
+        return cadence;
+    }
+
+    public int getGear() {
+        return gear;
+    }
+
+    public int getSpeed() {
+        return speed;
+    }
 }

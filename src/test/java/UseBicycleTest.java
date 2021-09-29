@@ -15,7 +15,7 @@ public class UseBicycleTest {
     @Test
     void 바이클_사용(){
         Bicycle bicycle = new Bicycle(1,1,1);
-        assertEquals(1, bicycle.getID(), "tutorial.Bicycle getId");
+        assertEquals(1, bicycle.getCadence(), "tutorial.Bicycle getId");
     }
 
     @ParameterizedTest
