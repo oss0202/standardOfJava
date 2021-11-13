@@ -44,4 +44,8 @@ public class MyStudent{
     public String toString() {
         return String.format("[%s, %s, %d학년 %d반, %3d점]", name, gender ? "남" : "여",hak, ban, score);
     }
+
+    public int compareTo(MyStudent myStudent){
+        return Integer.compare(this.score, myStudent.getScore());
+    }
 }
