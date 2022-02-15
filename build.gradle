@@ -13,6 +13,12 @@ dependencies {
     // https://mvnrepository.com/artifact/com.fasterxml.jackson.core/jackson-databind
     implementation group: 'com.fasterxml.jackson.core', name: 'jackson-databind', version: '2.9.8'
 
+    // https://mvnrepository.com/artifact/com.google.auto.service/auto-service
+    implementation 'com.google.auto.service:auto-service:1.0-rc2'
+    // https://mvnrepository.com/artifact/com.github.olivergondza/maven-jdk-tools-wrapper
+    implementation 'com.github.olivergondza:maven-jdk-tools-wrapper:0.1'
+
+
     testImplementation(platform('org.junit:junit-bom:5.8.0'))
     testImplementation('org.junit.jupiter:junit-jupiter')
 }
