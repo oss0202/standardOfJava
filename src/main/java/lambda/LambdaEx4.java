@@ -1,7 +1,5 @@
 package lambda;
 
-import com.sun.org.apache.xml.internal.dtm.ref.sax2dtm.SAX2DTM2;
-
 public class LambdaEx4 {
     public static void main(String[] args) {
         // 람다식을 매개변수로 전달 가능
