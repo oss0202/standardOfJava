@@ -1,3 +1,14 @@
+buildscript {
+    ext {
+        springBootVersion = "2.4.13"
+        lombokVersion = "1.18.22"
+    }
+
+    dependencies {
+        classpath "org.springframework.boot:spring-boot-gradle-plugin:${springBootVersion}"
+    }
+}
+
 plugins {
     id 'java'
     id 'eclipse' // optional (to generate Eclipse project files)
@@ -8,19 +19,34 @@ repositories {
     mavenCentral()
 }
 
+
 dependencies {
 
     // https://mvnrepository.com/artifact/com.fasterxml.jackson.core/jackson-databind
-    implementation group: 'com.fasterxml.jackson.core', name: 'jackson-databind', version: '2.9.8'
+//    implementation group: 'com.fasterxml.jackson.core', name: 'jackson-databind', version: '2.9.8'
+    implementation("org.codehaus.jackson:jackson-mapper-asl:1.9.13")
 
     // https://mvnrepository.com/artifact/com.google.auto.service/auto-service
-    implementation 'com.google.auto.service:auto-service:1.0-rc2'
+//    implementation 'com.google.auto.service:auto-service:1.0-rc2'
     // https://mvnrepository.com/artifact/com.github.olivergondza/maven-jdk-tools-wrapper
-    implementation 'com.github.olivergondza:maven-jdk-tools-wrapper:0.1'
+//    implementation 'com.github.olivergondza:maven-jdk-tools-wrapper:0.1'
+    // https://mvnrepository.com/artifact/com.oracle.database.jdbc/ojdbc11
+//    implementation 'com.oracle.database.jdbc:ojdbc11:21.5.0.0'
+
+    // https://mvnrepository.com/artifact/com.oracle.database.r2dbc/oracle-r2dbc
+//    implementation 'com.oracle.database.r2dbc:oracle-r2dbc:0.4.0'
 
 
     testImplementation(platform('org.junit:junit-bom:5.8.0'))
     testImplementation('org.junit.jupiter:junit-jupiter')
+
+    annotationProcessor(
+            "org.projectlombok:lombok:${lombokVersion}"
+    )
+    testAnnotationProcessor("org.projectlombok:lombok:${lombokVersion}")
+
+    implementation("org.projectlombok:lombok:${lombokVersion}")
+    testImplementation("org.projectlombok:lombok:${lombokVersion}")
 }
 
 test {

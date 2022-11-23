@@ -24,3 +24,4 @@ public class IteratorEx01 {
                 .collect(Collectors.toList());
     }
 }
+
