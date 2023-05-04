@@ -24,5 +24,6 @@ public class OptionalTest {
 //		System.out.println(StringUtils.isBlank(sampleCommandDto.getSampleName())?"11":"11");
 //		System.out.println(Optional.ofNullable(sampleCommandDto.getSampleName()).orElseGet(() -> "비었다."));
 //		System.out.println("".equals(sampleCommandDto.getSampleName()) ? sampleCommandDto.getSampleName() : "비었음");
+		System.out.println();
 	}
 }
